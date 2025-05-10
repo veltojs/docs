@@ -5,6 +5,7 @@ import ZHConfig from './zh.mts';
 export default defineConfig({
   title: "Velto",
   description: "A web framework without virtual DOM.",
+  outDir: '../dist',
   lang: 'zh-CN',
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/velto.svg' }],
