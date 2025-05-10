@@ -36,7 +36,7 @@ double.setValue(10);
 console.log(count.value); // 5
 ```
 
-### 🧠 内部机制简析
+## 内部机制简析
 
 * 调用 `computed()` 返回一个 `Computed` 实例。
 * 内部通过 `Effect` 实现响应式追踪与调度：
@@ -75,7 +75,7 @@ watch(total, (newVal) => {
 price.setValue(150); // 会自动触发 total 的更新和 watch 回调
 ```
 
-## 🏁 总结
+## 总结
 
 `computed` 是一种响应式派生值，适用于从一个或多个 `ref` 派生状态的场景。它具备缓存、追踪依赖、可读/可写的特性，并可与 `watch`、组件渲染等配合使用。
 

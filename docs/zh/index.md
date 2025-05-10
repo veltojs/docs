@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始>
-      link: /zh/guide/getting-started
+      link: /zh/guide/start-getting-started
 
 features:
   - title: 轻量

@@ -11,8 +11,23 @@ export default {
         {
           text: '开始',
           items: [
-            { text: '简介', link: 'introduction' },
-            { text: '快速开始', link: 'getting-started' },
+            { text: '简介', link: 'start-introduction' },
+            { text: '快速开始', link: 'start-getting-started' },
+          ]
+        },
+        {
+          text: '基础',
+          items: [
+            { text: 'JSX 语法', link: 'basic-jsx' },
+            { text: 'defineAsyncComponent', link: 'basic-define-async-component' },
+          ]
+        },
+        {
+          text: '响应式',
+          items: [
+            { text: 'ref', link: 'reactive-ref' },
+            { text: 'computed', link: 'reactive-computed' },
+            { text: 'watch', link: 'reactive-watch' },
           ]
         },
       ] },

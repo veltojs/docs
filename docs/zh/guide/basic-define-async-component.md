@@ -1,14 +1,6 @@
-根据你提供的源码，这里是 `velto` 中 `defineAsyncComponent` 的使用文档，详细介绍其用途、API、使用方法及内部原理。
-
----
-
 # defineAsyncComponent
 
-## 简介
-
 `defineAsyncComponent` 是 Velto 提供的一个工具函数，用于**按需异步加载组件**。这对于延迟加载大型模块、优化初始加载时间以及错误处理非常有用。
-
----
 
 ## 特性
 
@@ -16,8 +8,6 @@
 * 支持加载中组件（`loadingComponent`）
 * 支持错误处理组件（`errorComponent`）
 * 支持超时控制与重试
-
----
 
 ## 函数签名
 
@@ -34,8 +24,6 @@ function defineAsyncComponent(options: {
 }): Component;
 ```
 
----
-
 ## `AsyncComponentOptions` 参数说明
 
 | 选项名                | 类型                               | 说明                                             |
@@ -44,8 +32,6 @@ function defineAsyncComponent(options: {
 | `loadingComponent` | `Component`                      | 加载期间显示的组件（可选）                                  |
 | `errorComponent`   | `Component<ErrorComponentProps>` | 加载失败时显示的组件（可选）                                 |
 | `timeout`          | `number`                         | 超时时间（毫秒），超时视为失败（可选）                            |
-
----
 
 ## 基础异步加载
 
@@ -84,8 +70,6 @@ const AsyncPage = defineAsyncComponent({
   * 最初渲染 `loadingComponent`，成功后替换为目标组件，失败则渲染错误组件。
   * 每次 `mount` 时重新触发加载流程。
 
----
-
 ## 错误组件参数说明
 
 ```ts
@@ -99,7 +83,7 @@ interface ErrorComponentProps {
 
 你可以在错误组件中提供“重试”按钮，用户可重新触发组件加载。
 
-## 📌 注意事项
+## 注意事项
 
 * `defineAsyncComponent` 返回的组件必须和普通组件一样使用。
 * 异步组件默认立即加载，无懒加载调度（需自实现按需挂载）。

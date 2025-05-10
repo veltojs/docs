@@ -1,6 +1,6 @@
 
 
-## ref
+# ref
 
 ## 作用
 
@@ -16,9 +16,9 @@ console.log(count.value); // 读取值
 count.setValue(10);       // 修改值（需使用 setValue）
 ```
 
->>> 注意：在当前实现中，不能直接通过 `count.value = 10` 修改，必须使用 `setValue()` 方法。
+> ⚠️ **注意**
+  在当前实现中，不能直接通过 `count.value = 10` 修改，必须使用 `setValue()` 方法。
 
----
 
 ## 响应行为说明
 

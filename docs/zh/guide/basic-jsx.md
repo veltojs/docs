@@ -1,11 +1,9 @@
 
-# JSX 基本使用文档
+# JSX 基本使用
 
 JSX（JavaScript XML）是 Velto 推荐的声明式语法，用于描述 UI 界面结构。它在外观上类似 HTML，但本质上是 JavaScript 的语法扩展，在构建组件时提供了强大的表达能力。
 
----
-
-## 一、JSX 是什么？
+## JSX 是什么？
 
 JSX 会被 Velto 编译为 Javascript 语法的调用，例如：
 
@@ -33,9 +31,7 @@ const element = _markRender(() => {
 });
 ```
 
----
-
-## 二、JSX 中的基本类型支持
+## JSX 中的基本类型支持
 
 JSX 中可以嵌入多种 JavaScript 基本类型，这些类型在渲染时会根据特性做出不同处理。
 
@@ -124,9 +120,7 @@ function handleClick() {
 const element = <button onClick={handleClick}>Click Me</button>;
 ```
 
----
-
-## 三、进阶类型支持
+## 进阶类型支持
 
 ### 1. Fragment
 
@@ -162,9 +156,7 @@ JSX 最终会被转化为 JavaScript，而 JSX 中的属性也会变成 JavaScri
 const element = <button onClick={handleClick}>Click Me</button>;
 ```
 
----
-
-## 四、完整示例
+## 完整示例
 
 ```jsx
 function ProfileCard({ user }) {
@@ -183,8 +175,6 @@ function ProfileCard({ user }) {
 }
 ```
 
----
-
-## 六、结语
+## 结语
 
 JSX 是 Velto 的核心语法结构之一，掌握其基本类型及渲染机制，是构建高质量组件的基础。理解其行为、限制与用法可以大幅提升开发效率与代码质量。
