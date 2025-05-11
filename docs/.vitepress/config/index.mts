@@ -6,6 +6,7 @@ export default defineConfig({
   title: "Velto",
   description: "A web framework without virtual DOM.",
   outDir: "../dist",
+  base: '/docs/',
   lang: 'zh-CN',
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/velto.svg' }],
