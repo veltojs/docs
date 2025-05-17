@@ -49,8 +49,8 @@ jobs:
         run: pnpm run build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
       - name: Configure Git Identity
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "zebing"
+          git config user.email "1270105911@qq.com"
 
       - name: Deploy to gh-pages
         env:
