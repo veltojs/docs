@@ -55,4 +55,5 @@ jobs:
       - name: Deploy to gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPRO: veltojs/docs
         run: pnpm run deploy
