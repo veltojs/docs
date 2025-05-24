@@ -1,5 +1,5 @@
 
-# 📘 Velto 简介
+# Velto 简介
 
 **Velto** 是一个没有虚拟 DOM 的 Web 框架，旨在构建无需虚拟 DOM 的响应式用户界面。
 

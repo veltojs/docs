@@ -13,6 +13,7 @@ export default {
           items: [
             { text: '简介', link: 'start-introduction' },
             { text: '快速开始', link: 'start-getting-started' },
+            { text: '性能对比', link: 'start-performance' },
           ]
         },
         {
