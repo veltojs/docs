@@ -54,6 +54,19 @@ watch(count, (newVal, oldVal) => {
 });
 ```
 
+## 控制监听器生命周期
+```
+  const state = ref(0);
+
+  const handle = watch(() => state.value, (val) => {
+    console.log(`Watching: ${val}`);
+  });
+
+  handle.pause();   // 暂停监听
+  handle.resume();  // 恢复监听
+  handle.stop();    // 停止监听（彻底销毁）
+```
+
 ## 内部工作机制简析
 
 * `watch` 将响应式值抽象为一个 `getter`；
