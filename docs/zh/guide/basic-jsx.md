@@ -163,7 +163,7 @@ function ProfileCard({ user }) {
   const { name, age, hobbies, isOnline } = user;
 
   return (
-    <div className="profile-card" style={{ padding: 10, border: '1px solid #ccc' }}>
+    <div style={{ padding: 10, border: '1px solid #ccc' }}>
       <h2>{name}</h2>
       <p>Age: {age}</p>
       {isOnline && <p style={{ color: 'green' }}>● Online</p>}
