@@ -20,7 +20,6 @@ export default {
           text: '基础',
           items: [
             { text: 'JSX 语法', link: 'basic-jsx' },
-            { text: '节点引用', link: 'basic-ref' },
             { text: '生命周期', link: 'basic-lifecycle' },
             { text: 'Props', link: 'basic-props' },
             { text: '插槽 (Slot)', link: 'basic-slot' },
@@ -37,7 +36,16 @@ export default {
         {
           text: '组件',
           items: [
-            { text: 'defineAsyncComponent', link: 'basic-define-async-component' },
+            { text: 'defineAsyncComponent', link: 'component-async-component' },
+            { text: 'Attach', link: 'component-attch' },
+          ]
+        },
+        {
+          text: '特殊属性',
+          items: [
+            { text: '节点引用', link: 'attribute-ref' },
+            { text: 'innerHTML', link: 'attribute-innerhtml' },
+            { text: 'textContent', link: 'attribute-textContent' },
           ]
         },
       ] },
